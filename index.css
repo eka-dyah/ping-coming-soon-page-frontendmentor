@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;600;700&display=swap');
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.subscribe img {
+    width: 70px;
+    height: auto;
+    margin: 50px;
+}
+
+.subscribe h1 {
+    margin: 0;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 32px;
+    color: hsl(0, 0%, 59%);
+}
+
+.subscribe h1 strong {
+    color: black;
+}
+
+.subscribe p {
+    color: hsl(0, 1%, 41%);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+input[type="email"] {
+    width: 300px;
+    padding: 12px 12px 12px 23px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+input[type="email"]:active {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    color: lightgray;
+}
+
+form {
+    position: relative;
+}
+
+p.error {
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    padding-top: 0;
+    margin-left: 30px;
+    border: 1px solid transparent;
+    display: none;
+}
+
+button {
+    padding: 12px;
+    width: 130px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-left: 7px;
+    box-shadow: 0px 3px hsla(223, 87%, 63%, 0.18);
+}
+
+.disabled {
+    background-color: hsl(223, 100%, 88%);
+    cursor: not-allowed;
+}
+
+.illustration {
+    width: 70%;
+    margin-bottom: 70px;
+}
+
+.illustration img {
+    width: 100%;
+}
+
+.sosmed {
+    display: flex;
+}
+
+.sosmed div i {
+    width: 40px;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 5px 20px 5px;
+    color: hsl(223, 87%, 63%);
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 650px) {
+    .subscribe {
+        width: 100%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input,
+    button {
+        width: 100%;
+    }
+    button {
+        margin-top: 10px;
+    }
+    p.error {
+        position: relative;
+        margin: 10px;
+    }
+    .illustration {
+        width: 85%;
+    }
+}
